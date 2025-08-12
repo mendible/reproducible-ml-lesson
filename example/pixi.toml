@@ -25,3 +25,9 @@ depends-on = ["A"]
 [tasks.lab]
 description = "Launch jupyter lab"
 cmd = "jupyter lab"
+
+[feature.dev.dependencies]
+pre-commit = ">=4.3.0,<5"
+
+[environments]
+dev = ["dev"]
